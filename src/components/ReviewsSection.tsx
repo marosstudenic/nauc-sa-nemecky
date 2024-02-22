@@ -1,7 +1,7 @@
 "use client";
 export const ReviewsSection = () => {
     return (
-        <section>
+        <section className="my-8 overflow-hidden">
             <div className="px-4">
                 <h3 className="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-gray-900">Čo o mne hovoria moji študeti</h3>
             </div>
