@@ -18,10 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="max-w-screen">
-      <body className={inter.className}>
-        <Header />
-        {children}
-        <Footer />
+      <body className={inter.className}><Header />{children}<Footer />
       </body>
     </html>
   );

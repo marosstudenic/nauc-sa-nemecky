@@ -6,6 +6,8 @@ import { AboutLectorSection } from "./components/AboutLectorSection";
 import { CTASection } from "./components/CTASection";
 import { PricingSection } from "./components/PricingSection";
 import { TestLessonSection } from "./components/TestLessonSection";
+import { SocialProofSection } from "./components/SocialProofSection";
+import { ContactForm } from "./components/ContactForm";
 
 export default function Home() {
   return (
@@ -13,10 +15,12 @@ export default function Home() {
       <HeroSection />
       <ReviewsSection />
       <OfferSection />
+      <SocialProofSection />
       <AboutLectorSection />
       <CTASection />
       <PricingSection />
       <TestLessonSection />
+      <ContactForm />
     </main >
   );
 }
