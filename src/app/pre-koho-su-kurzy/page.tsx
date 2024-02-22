@@ -34,7 +34,7 @@ const Item = ({ id, title, description }: {
 
 export default function Page() {
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between lg:p-24 overflow-hidden gap-4 container px-4 mt-10">
+        <main className="flex min-h-screen flex-col items-center justify-between lg:p-24 overflow-hidden gap-4 container px-4 mt-10 mx-auto">
             <h1 className="text-gray-800 font-extrabold text-2xl lg:text-4xl text-center">Pre koho sú určené online kurzy</h1>
 
             <aside aria-label="Related articles" className="py-8 lg:py-24 ">
