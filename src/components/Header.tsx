@@ -28,16 +28,16 @@ export const Header = () => {
                     <div className={`justify-between items-center w-full lg:flex lg:w-auto lg:order-1 transition-[height] overflow-hidden ${isMenuOpen ? "h-auto" : "h-0"}`} id="mobile-menu-2">
                         <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                             <li>
-                                <Link href={navigation.HOME} className="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-gray-900 lg:p-0 dark:text-white" aria-current="page">Kurz nemčiny</Link>
+                                <Link href={navigation.HOME} className="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-gray-900 lg:p-0 dark:text-white" aria-current="page" onClick={() => toggleMenu()}>Kurz nemčiny</Link>
                             </li>
                             <li>
-                                <Link href={navigation.CENNIK} className="block py-2 pr-4 pl-3 text-white  border-b border-gray-100  lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-900 lg:p-0">Cenník</Link>
+                                <Link href={navigation.CENNIK} onClick={() => toggleMenu()} className="block py-2 pr-4 pl-3 text-white  border-b border-gray-100  lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-900 lg:p-0">Cenník</Link>
                             </li>
                             <li>
-                                <a href={navigation.DOHODNUT_PRVU_HODINU} className="block py-2 pr-4 pl-3 text-white  border-b border-gray-100  lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-900 lg:p-0">Dohodnúť prvú hodinu</a>
+                                <a href={navigation.DOHODNUT_PRVU_HODINU} onClick={() => toggleMenu()} className="block py-2 pr-4 pl-3 text-white  border-b border-gray-100  lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-900 lg:p-0">Dohodnúť prvú hodinu</a>
                             </li>
                             <li>
-                                <a href={navigation.PRE_KOHO_SU_KURZY} className="block py-2 pr-4 pl-3 text-white  border-gray-100  lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-900 lg:p-0  ">Pre koho sú kurzy určené</a>
+                                <a href={navigation.PRE_KOHO_SU_KURZY} onClick={() => toggleMenu()} className="block py-2 pr-4 pl-3 text-white  border-gray-100  lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-900 lg:p-0  ">Pre koho sú kurzy určené</a>
                             </li>
 
                         </ul>
