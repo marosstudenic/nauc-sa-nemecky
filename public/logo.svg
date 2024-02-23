@@ -1,0 +1,18 @@
+<svg width="420" height="391" viewBox="0 0 420 391" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<mask id="mask0_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="75" width="316" height="316">
+<circle cx="158" cy="233" r="158" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_0_1)">
+<rect x="-92.3854" y="75" width="501.821" height="316" fill="url(#pattern0)"/>
+</g>
+<path d="M177 83.0882C177.066 38.2763 231.091 1.98192 297.643 2.00001C364.195 2.00001 418.088 38.3486 418 83.1604C417.934 118.75 390.965 146.997 343.611 157.919C343.324 157.992 342.774 158.154 336.412 159.764L292.271 160.704L216.693 190L229.925 168.842L240.646 154.61L240.558 154.393C202.78 140.703 176.956 114.012 177 83.1063V83.0882Z" fill="#FFE08F" stroke="black" stroke-width="3.99" stroke-miterlimit="10"/>
+<ellipse cx="4.5" cy="2.5" rx="4.5" ry="2.5" transform="matrix(1 0 0 -1 245 83)" fill="black"/>
+<ellipse cx="4.5" cy="2.5" rx="4.5" ry="2.5" transform="matrix(1 0 0 -1 298 83)" fill="black"/>
+<ellipse cx="4.5" cy="2.5" rx="4.5" ry="2.5" transform="matrix(1 0 0 -1 351 85)" fill="black"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_0_1" transform="matrix(0.00477051 0 0 0.00757576 -0.0247559 0)"/>
+</pattern>
+<image id="image0_0_1" width="220" height="132" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAACEAgMAAACG6a2IAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEUAAADdAAD/zgD///9i/kqcAAAAAWJLR0QDEQxM8gAAAAd0SU1FB+EICgkYJYjPvrMAAAAySURBVFjD7ctBCQAACAQwS1rSlHY4EHxs/1UBAPBKZzzP8zzP87yjNxnP8zzP8zzv5i0iRWsUQNPpTgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNy0wOC0xMFQwOToyNDozNyswMDowMAydnXcAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTctMDgtMTBUMDk6MjQ6MzcrMDA6MDB9wCXLAAAAAElFTkSuQmCC"/>
+</defs>
+</svg>
