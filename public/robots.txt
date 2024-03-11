@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.nemecky-jazyk-online.sk/
+
+# Sitemaps
+Sitemap: https://www.nemecky-jazyk-online.sk/sitemap.xml
