@@ -1,12 +1,39 @@
 import { REACT_LOADABLE_MANIFEST } from "next/dist/shared/lib/constants";
-import { getCategoryById } from "../categories";
+import { categories, getCategoryById } from "../categories";
 import { ReviewsSection } from "@/components/ReviewsSection";
 import { ContactForm } from "@/components/ContactForm";
 import Image from "next/image";
+import { Metadata, ResolvingMetadata } from "next";
 
 type CategoryProps = {
     params: {
         category: string;
+    }
+}
+
+export async function generateStaticParams() {
+    return [categories.map((category) => ({ params: { category: category.id } }))];
+}
+
+export async function generateMetadata(
+    { params }: CategoryProps,
+    parent: ResolvingMetadata
+): Promise<Metadata> {
+    // read route params
+    const id = params.category
+
+    // fetch data
+    const item = getCategoryById(id);
+
+    // optionally access and extend (rather than replace) parent metadata
+    const previousImages = (await parent).openGraph?.images || []
+
+    return {
+        metadataBase: new URL(process.env.NEXT_PUBLIC_HOST_URL ?? "https://www.nemecky-jazyk-online.sk/"),
+        title: item?.title ?? "Plynule nemecky",
+        openGraph: {
+            images: [`/images/categories/${id}.jpg`, ...previousImages],
+        },
     }
 }
 
