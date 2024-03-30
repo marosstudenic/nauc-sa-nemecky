@@ -10,7 +10,7 @@ interface SitemapEntry {
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const categoryUrls: SitemapEntry[] = categories.map(category => ({
-        url: process.env.NEXT_PUBLIC_HOST_URL + '/pre-koho-su-kurzy/' + category.id,
+        url: process.env.NEXT_PUBLIC_HOST_URL + 'pre-koho-su-kurzy/' + category.id,
         lastModified: new Date(),
         changeFrequency: 'weekly' as 'weekly',
         priority: 0.7,
@@ -23,19 +23,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 1,
         },
         {
-            url: process.env.NEXT_PUBLIC_HOST_URL + '/cennik',
+            url: process.env.NEXT_PUBLIC_HOST_URL + 'cennik',
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 0.8,
         },
         {
-            url: process.env.NEXT_PUBLIC_HOST_URL + '/dohodnut-prvu-hodinu',
+            url: process.env.NEXT_PUBLIC_HOST_URL + 'dohodnut-prvu-hodinu',
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 0.5,
         },
         {
-            url: process.env.NEXT_PUBLIC_HOST_URL + '/pre-koho-su-kurzy',
+            url: process.env.NEXT_PUBLIC_HOST_URL + 'pre-koho-su-kurzy',
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 0.5,
